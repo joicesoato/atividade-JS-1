@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria</title>
+
+    <link rel="stylesheet" href="pizzaria_style.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- HEADER -->
     <header>
+
         <div>
-            <p>Logo</p>
+            <p>Pizzaria</p>
         </div>
 
         <nav>
@@ -20,49 +25,129 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <!-- Conteúdo principal -->
+    <!-- MAIN -->
     <main>
 
+        <!-- TÍTULO -->
         <section>
             <h1>Menu</h1>
         </section>
 
+        <!-- PIZZAS -->
         <section>
 
+            <!-- PIZZA 1 -->
             <article>
+
                 <h2>Pizza Calabresa</h2>
-                <p>Imagem da pizza</p>
-                <img src="imagens/pizza_calabresa.png" alt="Pizza de calabresa">
-                <p>Pizza com calabresa e cebola.</p>
-                <button>Comprar</button>
+
+                <img
+                    src="imagens/pizza_calabresa.png"
+                    alt="Pizza Calabresa"
+                >
+
+                <p>
+                    Pizza com calabresa e cebola.
+                </p>
+
+                <p class="preco">
+                    R$ 45,00
+                </p>
+
+                <button
+                    class="btn-comprar"
+                    data-nome="Pizza Calabresa"
+                    data-preco="45"
+                >
+                    Comprar
+                </button>
+
             </article>
 
+            <!-- PIZZA 2 -->
             <article>
+
                 <h2>Pizza Frango com Catupiry</h2>
-                <p>Imagem da pizza</p>
-                <img src="imagens/pizza_frango.png" alt="Pizza de Frango com catupiry">
-                <p>Pizza de frango com catupiry.</p>
-                <button>Comprar</button>
+
+                <img
+                    src="imagens/pizza_frango.png"
+                    alt="Pizza Frango"
+                >
+
+                <p>
+                    Pizza de frango com catupiry.
+                </p>
+
+                <p class="preco">
+                    R$ 50,00
+                </p>
+
+                <button
+                    class="btn-comprar"
+                    data-nome="Pizza Frango com Catupiry"
+                    data-preco="50"
+                >
+                    Comprar
+                </button>
+
             </article>
 
+            <!-- PIZZA 3 -->
             <article>
+
                 <h2>Pizza Brócolis e Bacon</h2>
-                <p>Imagem da pizza</p>
-                <img src="imagens/pizza_brocolis.png" alt="Pizza de Brócolis">
-                <p>Pizza Brócolis e Bacon.</p>
-                <button>Comprar</button>
+
+                <img
+                    src="imagens/pizza_brocolis.png"
+                    alt="Pizza Brócolis"
+                >
+
+                <p>
+                    Pizza Brócolis e Bacon.
+                </p>
+
+                <p class="preco">
+                    R$ 55,00
+                </p>
+
+                <button
+                    class="btn-comprar"
+                    data-nome="Pizza Brócolis e Bacon"
+                    data-preco="55"
+                >
+                    Comprar
+                </button>
+
             </article>
+
+        </section>
+
+        <!-- CARRINHO -->
+        <section class="carrinho">
+
+            <h2> Carrinho</h2>
+
+            <ul id="lista-carrinho"></ul>
+
+            <div class="total-carrinho">
+                Total: R$
+                <span id="total">0</span>
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Rodapé -->
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Pizzaria</p>
     </footer>
 
+    <script src="app.js"></script>
+
 </body>
+
 </html>
